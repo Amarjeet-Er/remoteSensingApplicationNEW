@@ -1,0 +1,73 @@
+.owl-happenings .item {
+    height: 400px;
+    background: #4a4a4a;
+    color: #fff;
+    padding: 0px;
+}
+
+.owl-happenings .item img {
+    height: 400px;
+    background: #4a4a4a;
+    color: #fff;
+    padding: 0px;
+}
+
+.happeningBox {
+    width: 100% !important;
+    height: 150px !important;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.happeningImg {
+    width: 40%;
+    height: 150px !important;
+}
+
+.happeningImg img {
+    height: 100%;
+}
+
+.happeningText {
+    width: 60%;
+}
+
+.paddinghappeing {
+    padding: 0 5%;
+}
+
+.three-line-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+}
+
+.three-line-truncate:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* CSS to hide the navbar on scroll */
+.navbar {
+    transition: top 0.3s;
+}
+
+.navbar-hidden {
+    top: -150px;
+}
+
+.rotateBox {
+    transition: transform 1.5s ease;
+}
+
+.rotateBox:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.text-shadow {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
