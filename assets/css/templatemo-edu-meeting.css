@@ -949,6 +949,7 @@ gov members design
   }
 }
 
+
 @media screen and (max-width: 480px) {
   .memberBox {
     padding: 15px;
@@ -1059,18 +1060,29 @@ research design
   flex: 1;
 }
 
-.contentBox p {
+.contentBox h5 {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.contentBox p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
 }
 
 .imgBox {
   width: 100%;
   height: 500px;
   position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .imgBox img {
@@ -1087,10 +1099,10 @@ research design
   background: linear-gradient(transparent, rgba(0, 0, 0, 3.7));
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   gap: 10px;
-  padding: 0 20px;
+  padding: 20px;
   box-sizing: border-box;
 
   h5,
@@ -1103,6 +1115,11 @@ research design
 
   span {
     font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -1333,6 +1350,7 @@ Events design
   height: 100%;
   object-fit: contain;
 }
+
 
 /*
 ---------------------------------------------
@@ -1786,6 +1804,182 @@ section.our-facts .video img {
   padding: 170px 0px;
   max-width: 56px;
 }
+
+
+
+
+
+
+
+/* 
+---------------------------------------------
+photo image
+--------------------------------------------- 
+*/
+
+section.our-gallery {
+  background-image: url(../images/gallery-bg.png);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.our-gallery .item .down-content {
+  background-color: #f0f0f0;
+}
+
+.our-gallery .item .down-content h4 {
+  padding: 25px;
+  font-size: 18px;
+  color: #1f272b;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.our-gallery .item .down-content .info {
+  padding: 25px;
+}
+
+.our-gallery .item .down-content .info ul li {
+  display: inline-block;
+  margin-right: 1px;
+}
+
+.our-gallery .item .down-content .info ul li i {
+  color: #f5a425;
+  font-size: 14px;
+}
+
+.our-gallery .item .down-content .info span {
+  color: #a12c2f;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+}
+
+.our-gallery .owl-nav {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-45px);
+}
+
+.our-gallery .owl-dots {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.our-gallery .owl-dots .owl-dot {
+  transition: all 0.5s;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  margin: 0px 5px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.our-gallery .owl-dots .active {
+  width: 24px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.our-gallery .owl-nav .owl-prev {
+  margin-right: 10px;
+  outline: none;
+  position: absolute;
+  left: -80px;
+}
+
+.our-gallery .owl-nav .owl-prev span,
+.our-gallery .owl-nav .owl-next span {
+  opacity: 0;
+}
+
+.our-gallery .owl-nav .owl-prev:before {
+  display: inline-block;
+  font-family: "FontAwesome";
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 700;
+  content: "\f104";
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}
+
+.our-gallery .owl-nav .owl-prev {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.our-gallery .owl-nav .owl-prev:hover {
+  opacity: 0.9;
+}
+
+.our-gallery .owl-nav .owl-next {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.our-gallery .owl-nav .owl-next:hover {
+  opacity: 0.9;
+}
+
+.our-gallery .owl-nav .owl-next {
+  margin-left: 10px;
+  outline: none;
+  position: absolute;
+  right: -85px;
+}
+
+.our-gallery .owl-nav .owl-next:before {
+  display: inline-block;
+  font-family: "FontAwesome";
+  color: #1e1e1e;
+  font-size: 25px;
+  font-weight: 700;
+  content: "\f105";
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+}
+
+
+.imageBox {
+  border: 1px solid #878787;
+  border-radius: 5px;
+  /* width: 280px;
+  height: 130px; */
+  padding: 5px;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* 
+---------------------------------------------
+photo image end
+--------------------------------------------- 
+*/
+
+
+
 
 /* 
 ---------------------------------------------
