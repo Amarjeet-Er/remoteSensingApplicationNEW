@@ -1378,7 +1378,6 @@ section.upcoming-meetings .categories {
   border-radius: 20px;
   padding: 40px;
   margin-right: 45px;
-  border: 1px solid black;
 }
 
 section.upcoming-meetings .categories h4 {
@@ -1430,7 +1429,6 @@ section.upcoming-meetings .categories .main-button-red a {
 .meeting-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  border: 1px solid gray;
 }
 
 .meeting-item .thumb .price {
@@ -1449,7 +1447,7 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content {
-  padding: 20px;
+  padding: 30px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   text-align: center;
