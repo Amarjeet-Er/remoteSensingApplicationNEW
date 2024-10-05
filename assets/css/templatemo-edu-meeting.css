@@ -1595,13 +1595,13 @@ courses
 */
 
 section.our-courses {
-  /* background-image: url(../images/meetings-bg.jpg); */
+  background-image: url(../images/gallery-bg.png);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
-  padding-bottom: 130px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .our-courses .item .down-content {
@@ -1972,9 +1972,118 @@ section.our-gallery {
   height: 100%;
   object-fit: contain;
 }
+
 /* 
 ---------------------------------------------
 photo image end
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+start scientists
+--------------------------------------------- 
+*/
+section.our-profiles {
+  background-color: #f5f5f5;
+  /* Subtle background to make profiles stand out */
+  padding: 60px 0;
+}
+
+.our-profiles .profile-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid gray;
+  margin: 10px 0px;
+  height: 280px;
+}
+
+.our-profiles .profile-card:hover {
+  transform: translateY(-10px);
+  /* Elevates the card on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.our-profiles .profile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.our-profiles .profile-card:hover img {
+  opacity: 0.8;
+}
+
+.our-profiles .profile-card .profile-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.our-profiles .profile-card:hover .profile-details {
+  transform: translateY(0);
+  /* Slide up the details on hover */
+}
+
+.our-profiles .profile-card .profile-details h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.our-profiles .profile-card .profile-details p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #c9bfbf;
+}
+
+.our-profiles .profile-card .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.our-profiles .profile-card:hover .social-icons {
+  opacity: 1;
+  /* Fade in social icons */
+}
+
+.our-profiles .social-icons a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.our-profiles .social-icons a:hover {
+  color: #f5a425;
+  /* Social icons hover effect */
+}
+
+@media (max-width: 768px) {
+  .our-profiles .profile-card {
+    margin-bottom: 30px;
+  }
+}
+
+/* 
+---------------------------------------------
+scientists end
 --------------------------------------------- 
 */
 
